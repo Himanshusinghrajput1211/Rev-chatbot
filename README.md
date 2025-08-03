@@ -1,105 +1,109 @@
-Got it. Here's a **simplified, human-like README**—clear, easy to follow, and written in a natural tone that **doesn’t sound like AI**:
 
----
+# Revolt Voice Chatbot (Replica using Gemini Live API)
 
-````markdown
-# Revolt Motors Voice Chatbot (Clone)
+This project replicates the **Rev** voice chatbot from [Revolt Motors](https://live.revoltmotors.com) using **Gemini Live API**. It supports **real-time conversation**, **voice input/output**, **interruption handling**, and **fast responses**, just like the original.
 
-This is a voice chatbot web app made to work just like the one on the Revolt Motors website. You can talk to it, interrupt it while it's speaking, and get fast responses — just like the original.
+## 🔥 Features
 
----
+- 🎤 **Voice-based conversation** with Gemini 2.5 audio dialog model
+- ⚡ **Low latency** response (1-2 sec average)
+- 🔄 **Interrupt AI mid-response** — speaks only when you stop
+- 🗣️ **Multilingual support**
+- 🧠 Gemini replies are limited to **Revolt Motors topics only**
 
-##  What I Built
+## 💻 Tech Stack
 
-I recreated the “Rev” voice assistant (found on [live.revoltmotors.com](https://live.revoltmotors.com)) using:
+- **Frontend**: HTML, JavaScript (Web Speech API)
+- **Backend**: Node.js, Express.js
+- **API**: Gemini 2.5 Flash Live Audio Dialog (native)
+- **Hosting**: Railway
 
-- **Node.js + Express** for the backend
-- **Gemini Live API** for real-time voice replies
-- **Web Speech API** for voice input and output on the browser
+## 📹 Demo Video
 
-It’s fast, supports multiple languages, and reacts to user interruptions mid-conversation — just like the real one.
+👉 [Watch the working demo](https://drive.google.com/file/d/1B8ELr03LI9n--n9owD4Uo7WHd1zFO6Yp/view?usp=sharing)
 
----
+## 🛠️ How to Run Locally
 
-##  How to Use (Locally)
-
-### 1. Clone this repo
+### 1. Clone the repo
 
 ```bash
-git clone https://github.com/your-username/revolt-voice-chatbot.git
-cd revolt-voice-chatbot/server
+git clone https://github.com/codegurupoocoo/revolt-voice-chatbot-2-.git
+cd revolt-voice-chatbot-2-
 ````
 
-### 2. Install backend packages
+### 2. Set up environment
+
+Create a `.env` file inside the `server` folder:
+
+```
+GEMINI_API_KEY=your_google_ai_api_key_here
+```
+
+> You can get your key from [https://aistudio.google.com](https://aistudio.google.com)
+
+### 3. Install dependencies
 
 ```bash
+cd server
 npm install
 ```
 
-### 3. Add your API key
-
-Make a `.env` file in the `server` folder and paste this:
-
-```
-GEMINI_API_KEY=your_google_api_key
-PORT=8080
-```
-
-> Get your key from [Google AI Studio](https://aistudio.google.com/app/apikey)
-
-### 4. Start the backend
+### 4. Start the server
 
 ```bash
 node index.js
 ```
 
-Now the server will run at: `http://localhost:8080`
+By default, it runs on `http://localhost:8080`
+
+### 5. Open frontend
+
+Open `index.html` from the root folder in a browser. You can now start speaking with the AI assistant!
+
+## 🌐 Hosted Version
+
+You can access the live version here:
+🔗 [revolt-voice-chatbot-2-production.up.railway.app](https://revolt-voice-chatbot-2-production.up.railway.app)
+
+> Note: Free API limits may sometimes slow responses or disable audio temporarily.
+
+## ⚙️ Gemini Model Used
+
+We used this model in final submission:
+
+```
+gemini-2.5-flash-preview-native-audio-dialog
+```
+
+For testing or debugging, switch to:
+
+* `gemini-live-2.5-flash-preview`
+* `gemini-2.0-flash-live-001`
+
+## 📂 Folder Structure
+
+```
+.
+├── index.html       # Frontend
+└── server
+    ├── index.js     # Express backend
+    └── .env         # API key (not pushed to GitHub)
+```
+
+## 📑 System Instructions
+
+Gemini is guided to only respond with information related to **Revolt Motors** — product details, services, features, etc.
 
 ---
 
-##  Features
+## 📬 Contact
 
-*  Talk to Gemini using your voice
-*  Interrupt while it’s replying (just like Revolt’s chatbot)
-*  Works in different languages
-*  Fast — replies come in about 1-2 seconds
+Made by **Tushar Singh**
+📧 [tusharsingh1616@gmail.com](mailto:tusharsingh1616@gmail.com)
 
 ---
-
-##  Hosted Version
-
-You can try it live here:
- [https://revolt-voice-chatbot-2-production.up.railway.app](https://revolt-voice-chatbot-2-production.up.railway.app)
-
----
-
-##  Demo Video
-
-Here’s a quick video showing how it works:
- ([https://drive.google.com/demo-link](https://drive.google.com/file/d/1B8ELr03LI9n--n9owD4Uo7WHd1zFO6Yp/view?usp=sharing))
-
----
-
-##  AI Prompt Used
-
-> "You are a helpful voice assistant for Revolt Motors. Only talk about Revolt bikes, services, company info. Politely ignore anything else."
-
----
-
-##  About Me
-
-Hi, I’m **Tushar Singh** 👋
-This project was part of a task to recreate the Revolt chatbot using Gemini.
-
- Email: [tusharsingh1616@gmail.com](mailto:tusharsingh1616@gmail.com)
- LinkedIn: [linkedin.com/in/tushar1616](https://linkedin.com/in/tushar1616)
-
----
-
-##  Note
-
-This is just a clone for learning/demo purposes. I’m not associated with Revolt Motors.
 
 ```
 
-
+Let me know if you want me to commit this README directly or help add screenshots too.
+```
