@@ -101,9 +101,16 @@ Gemini is guided to only respond with information related to **Revolt Motors** �
 Made by **Tushar Singh**
 📧 [tusharsingh1616@gmail.com](mailto:tusharsingh1616@gmail.com)
 
----
+Task 1 –  (Benchmark Study)
 
-```
+1. Conversation Flow
+The AI maintains a smooth and natural tone throughout the conversation. It listens attentively and responds promptly, making the interaction feel seamless.
 
-Let me know if you want me to commit this README directly or help add screenshots too.
-```
+2. Language Switching
+When switching from English to Hindi (or vice versa), the AI continues listening without interruption, waits about 2 seconds, and then responds in the new language. The switch is handled well, though there is a slight delay before it adapts fully to the new language.
+
+3. Interruption Handling
+The AI handles interruptions effectively. It listens carefully when interrupted, then responds appropriately. However, when an interruption also involves changing the language, it takes slightly longer to adjust to the new language.
+
+4. Latency
+When asked a question, the AI typically takes around 2 seconds to start responding. If the language is changed during the conversation, it continues the response in the same language that was used in the latest question.
